@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 // 引用axios，并设置基础url为后端服务api地址
 var axios = require('axios')
-axios.default.baseURL = 'http://localhost:8887/api'
+axios.default.baseURL = 'http://localhost:8089/api'
 /* eslint-disable no-new */
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false

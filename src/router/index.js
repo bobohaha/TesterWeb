@@ -8,13 +8,6 @@ import Login from '../components/CommonVue/Login'
 Vue.use(Router)
 
 export default new Router({
-  // routes: [
-  //   {
-  //     path: '/',
-  //     name: 'HelloWorld',
-  //     component: HelloWorld
-  //   }
-  // ]
   routes: [
     {
       path: '/',
