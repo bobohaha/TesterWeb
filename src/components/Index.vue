@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Footer from './CommonVue/Footer'
-import Header from './CommonVue/Header'
+import Footer from './Common/Footer'
+import Header from './Common/Header'
 export default {
   name: 'Index',
   components: {Header, Footer}

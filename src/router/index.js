@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 // eslint-disable-next-line no-unused-vars
 import Index from '../components/Index'
-import Login from '../components/CommonVue/Login'
+import Login from '../components/Common/Login'
 
 Vue.use(Router)
 
