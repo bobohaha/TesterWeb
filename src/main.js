@@ -18,13 +18,12 @@ import 'element-ui/lib/theme-chalk/index.css'
 axios.defaults.baseURL = 'https://cnodejs.org/api/v1'
 /* eslint-disable no-new */
 Vue.config.productionTip = false
-// 全局注册,引入函数后需要注册
-// 注册axios，使用this.$http调用axios方法
+// 注册axios，使用this.$http调用axios方法, 局部引用使用vue.prototype的方式，使用时使用$http调用
 Vue.prototype.$http = axios
 // 注册utils函数
 Vue.prototype.$utils = utils
 
-// 使用element 2
+// // 全局注册,引入函数后需要注册 使用element 2
 Vue.use(ElementUI)
 
 new Vue({

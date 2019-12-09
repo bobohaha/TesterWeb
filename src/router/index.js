@@ -18,7 +18,7 @@ export default new Router({
       redirect: '/HelloWorld'
     },
     {
-      path: '/index',
+      path: '/Index',
       name: 'Index', // path别名，可没有
       meta: {
         title: '首页'

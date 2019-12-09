@@ -3,7 +3,7 @@
 <!--    <img src="./assets/logo.png">-->
     <!--引用组件的方式-->
     <IndexPage></IndexPage>
-    <router-view/> <!--路由展示-->
+    <!--<router-view/> 路由展示-->
   </div>
 </template>
 
