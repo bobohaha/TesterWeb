@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 <!--    <img src="./assets/logo.png">-->
-    <router-view/>
+    <router-view/> <!--路由展示-->
   </div>
 </template>
 
@@ -12,7 +12,9 @@ export default {
 </script>
 
 <style>
-  /*@import "./style";*/
+  /*
+    样式引用采用@import, eg:@import "./style";
+  */
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

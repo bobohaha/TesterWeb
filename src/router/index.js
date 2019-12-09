@@ -2,13 +2,15 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 // eslint-disable-next-line no-unused-vars
+// import 别名 from path/vue文件
 import Index from '../components/Index'
-import Login from '../components/Common/Login'
 import content from '../page/content'
+import IndexPage from '../components/IndexPage'
 
 Vue.use(Router)
 
 export default new Router({
+  // 新增路由，在[]中添加
   routes: [
     {
       path: '/',
@@ -16,16 +18,19 @@ export default new Router({
     },
     {
       path: '/index',
-      name: 'Index',
-      component: Index
+      name: 'Index', // path别名，可没有
+      meta: {
+        title: '首页'
+      },
+      component: Index// 设置跳转的页面
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
+      path: '/indexPage',
+      name: 'indexPage',
+      component: IndexPage
     },
     {
-      path: '/content/:id',
+      path: '/content/:id', // 动态路由 ：id
       name: '详情',
       meta: {
         title: '详情'

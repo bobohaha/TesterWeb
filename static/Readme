@@ -1,0 +1,6 @@
+1.安装nodejs
+2.安装vue-cli 脚手架 npm install vue-cli -g (系统全局的包)
+3.启动项目 npm run dev
+4.引用scss文件， 安装编译工具npm install -D node-sass sass-loader
+5.ajax请求处理， 安装axios： npm install axios --save
+
