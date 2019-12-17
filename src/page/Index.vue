@@ -1,6 +1,6 @@
 <template>
     <div>
-      <header></header>
+      <Base></Base>
       <hr/>
       <div>
         <ul>
@@ -15,13 +15,12 @@
           </li>
         </ul>
       </div>
-      <footer></footer>
     </div>
 </template>
 
 <script>
-import Footer from './Common/Footer'
-import Header from './Common/Header'
+import Index from '../page/Index'
+import Base from '../components/Common/Base'
 export default {
   name: 'Index',
   // 传递数据
@@ -36,7 +35,7 @@ export default {
   methods: {
     getTopics () {
       /* 调用接口 */
-      this.$http.get('/topics')
+      this.$http.get('https://cnodejs.org/api/v1/topics')
       // res =>  es6的箭头函数, 等同于function (res)
         .then(res => {
           console.log(res)
@@ -47,7 +46,7 @@ export default {
         })
     }
   },
-  components: {Header, Footer}
+  components: {Index, Base}
 }
 </script>
 

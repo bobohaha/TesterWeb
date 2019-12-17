@@ -15,7 +15,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 // 2.并设置基础url为后端服务api地址,设置全局访问接口，在请求接口时，无需每次都完整写入
 // axios.default.baseURL = 'http://localhost:8089/api'
-axios.defaults.baseURL = 'https://cnodejs.org/api/v1'
+// axios.defaults.baseURL = 'https://cnodejs.org/api/v1'
 /* eslint-disable no-new */
 Vue.config.productionTip = false
 // 注册axios，使用this.$http调用axios方法, 局部引用使用vue.prototype的方式，使用时使用$http调用

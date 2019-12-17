@@ -3,10 +3,11 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 // eslint-disable-next-line no-unused-vars
 // import 别名 from path/vue文件
-import Index from '../components/Index'
 import content from '../page/content'
 import IndexPage from '../components/IndexPage'
 import Login from '../components/Common/Login'
+import GoodsList from '../components/GoodsList'
+import Index from '../page/Index'
 
 Vue.use(Router)
 
@@ -15,7 +16,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/HelloWorld'
+      redirect: '/Index'
     },
     {
       path: '/Index',
@@ -45,6 +46,14 @@ export default new Router({
         title: '详情'
       },
       component: content
+    },
+    {
+      path: '/GoodsList',
+      name: '商品列表',
+      meta: {
+        title: '商品列表'
+      },
+      component: GoodsList
     }
   ]
 })
