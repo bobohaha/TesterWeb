@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     login () {
-      this.$axios
+      this.$http
         .post('/login', {
           username: this.loginInfoVo.username,
           password: this.loginInfoVo.password

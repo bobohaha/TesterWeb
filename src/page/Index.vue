@@ -1,6 +1,5 @@
 <template>
     <div>
-      <Base></Base>
       <hr/>
       <div>
         <ul>

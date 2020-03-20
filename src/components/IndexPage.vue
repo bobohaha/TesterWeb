@@ -21,7 +21,7 @@
                 <span>工具</span>
               </template>
               <el-menu-item index="/GoodsList">商品列表</el-menu-item>
-              <el-menu-item index="1-2">选项2</el-menu-item>
+              <el-menu-item index="/IndexPage/Child">选项2</el-menu-item>
             </el-submenu>
             <el-menu-item index="3">
               <i class="el-icon-more"></i>

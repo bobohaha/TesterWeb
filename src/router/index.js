@@ -8,6 +8,7 @@ import IndexPage from '../components/IndexPage'
 import Login from '../components/Common/Login'
 import GoodsList from '../components/GoodsList'
 import Index from '../page/Index'
+import Child from '../page/Child'
 
 Vue.use(Router)
 
@@ -37,7 +38,11 @@ export default new Router({
     {
       path: '/indexPage',
       name: 'indexPage',
-      component: IndexPage
+      component: IndexPage,
+      children: [{
+        path: 'child',
+        component: Index
+      }]
     },
     {
       path: '/content/:id', // 动态路由 ：id
